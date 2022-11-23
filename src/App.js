@@ -52,7 +52,7 @@ export default function App() {
     <div className="App">
       <h1>Cities Of The World</h1>
       <div id="wrapper">
-        <div id="thumbnails">
+        <div onClick={style.border.img="1px solid blue"} id="thumbnails">
           {images} 
         </div>
         {<img src={bigImage} /> }
