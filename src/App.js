@@ -16,6 +16,8 @@ export default function App() {
     setBigImage(img);
   };
 
+
+
   // CREATE A VARIABLE CALLED images THAT LOOPs OVER THE imagesArr AND RETURNS AN <IMG> ELEMENT
     // ASSIGN ALL OF THE PROPERTIES THAT IT NEEDS: src, alt, className, key INCLUDING AN onClick EVENT THAT CALLS THE HANDLE EVENT FUNCTION AND PASSES IT THE IMG URL
   const images = imagesArr.map((image, index) => {
@@ -28,6 +30,22 @@ export default function App() {
       />
     );
   });
+
+  //things to try for border still
+  // if image is selected is equal to true 
+  //apply a classname
+  // in css give that classname a border 
+  // if selected is equal to false 
+  // remove classname
+
+
+  //OR
+
+  // if Big image src is equal to thumbnail img src
+  // put a border around the thumbnail
+  
+  //or 
+  //add a style to the image tag
 
 
   return (
