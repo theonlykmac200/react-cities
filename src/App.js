@@ -20,7 +20,7 @@ export default function App() {
     // ASSIGN ALL OF THE PROPERTIES THAT IT NEEDS: src, alt, className, key INCLUDING AN onClick EVENT THAT CALLS THE HANDLE EVENT FUNCTION AND PASSES IT THE IMG URL
   const images = imagesArr.map((image, index) => {
     return (
-      <img
+      <img className="thumb"
         key={index}
         src={image.img}
         alt={image.city}
