@@ -27,6 +27,10 @@ export default function App() {
         src={image.img}
         alt={image.city}
         onClick={() => handleClick(image.img)}
+   //or 
+  //add a style to the image tag
+
+        style = {{ border: bigImage === image.img ? "8px solid purple" : "" }}
       />
     );
   });
@@ -40,19 +44,17 @@ export default function App() {
 
 
   //OR
-
-  // if Big image src is equal to thumbnail img src
+ // if Big image src is equal to thumbnail img src
   // put a border around the thumbnail
+
   
-  //or 
-  //add a style to the image tag
 
 
-  return (
+ return (
     <div className="App">
       <h1>Cities Of The World</h1>
       <div id="wrapper">
-        <div onClick={style.border.img="1px solid blue"} id="thumbnails">
+        <div id="thumbnails">
           {images} 
         </div>
         {<img src={bigImage} /> }
