@@ -35,19 +35,7 @@ export default function App() {
     );
   });
 
-  //things to try for border still
-  // if image is selected is equal to true 
-  //apply a classname
-  // in css give that classname a border 
-  // if selected is equal to false 
-  // remove classname
 
-
-  //OR
- // if Big image src is equal to thumbnail img src
-  // put a border around the thumbnail
-
-  
 
 
  return (
