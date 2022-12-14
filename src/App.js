@@ -22,15 +22,15 @@ export default function App() {
     // ASSIGN ALL OF THE PROPERTIES THAT IT NEEDS: src, alt, className, key INCLUDING AN onClick EVENT THAT CALLS THE HANDLE EVENT FUNCTION AND PASSES IT THE IMG URL
   const images = imagesArr.map((image, index) => {
     return (
-      <img className="thumb"
+      <img
         key={index}
         src={image.img}
         alt={image.city}
         onClick={() => handleClick(image.img)}
    //or 
   //add a style to the image tag
-
-        style = {{ border: bigImage === image.img ? "8px solid purple" : "" }}
+        className={image.img === bigImage ? 'thumb border' : 'thumb'}
+        // style = {{ border: bigImage === image.img ? "8px solid purple" : "" }}
       />
     );
   });

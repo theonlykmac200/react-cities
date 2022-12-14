@@ -42,4 +42,7 @@ body {
     cursor: pointer;
     object-fit:cover;
   }
+  .border{
+    border: 3px solid blue;
+  }
   
